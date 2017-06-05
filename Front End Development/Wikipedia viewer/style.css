@@ -1,0 +1,44 @@
+body{
+	background-color: #1B2866;
+}
+.caption{
+	color:#fff;
+}
+#randomButton{
+	margin-bottom: 35px;
+}
+#search	{
+	width: 300px;	
+	margin:0 auto;
+	margin-bottom: 10px;
+}
+#searchResult a{
+	color: #E6E7EC;
+}
+#searchResult a:link{
+	text-decoration: none;
+}
+#searchResult a:hover{
+	text-decoration: none;
+}
+.result{
+	width: 100%;
+    height: auto;
+	background-color: #2D3C87;
+	border-radius: 10px;
+    border: 2px solid;
+    margin-bottom: 20px;
+}
+.result:hover{
+	background-color: #2F47C0;
+}
+.result h1{
+	margin: 5px 0 0 5px;
+	text-align: left;
+	font-size: 25px;
+}
+.result p{
+	margin: 5px 0 20px 5px;
+	text-align: left;
+	font-size: 15px;
+}

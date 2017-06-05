@@ -1,0 +1,18 @@
+body{
+    padding-top:100px;
+}
+.qText{
+    font-size: 30px;
+}
+.qAuthor{
+    font-style: italic;
+    font-size: 10px;
+}
+
+@media only screen and (min-width: 500px) {
+    .jumbotron{
+        margin-left: 100px;
+        margin-right: 100px;
+        min-height: 200px;
+    }
+}

@@ -1,0 +1,111 @@
+.wrapper{
+    display: table;
+    margin: 0 auto;
+    border: 1px solid #eee;
+    width: 500px;
+    height: 500px;
+    padding: 50px;
+    font-family: Sansita;
+}
+/*caption*/
+.wrapper .caption{
+    list-style-type: none;
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+.wrapper .caption .count{
+    display: inline-block;
+    margin-left: 230px;    
+}
+.wrapper .caption .info{
+    display: inline-block;
+}
+
+
+
+
+/*choose X or O playground */
+.wrapper .playground1{
+    display: table;
+    margin: 0 auto;
+    border-radius: 5%;
+    width: 402px;
+    height: 402px;
+    background-color:#F9FF51;
+    box-shadow: inset -1px 1px 7px rgba(0,0,0,.2), inset 1px -1px 7px rgba(0,0,0,.2), 1px 12px 5px rgba(0,0,0,.4), 4px 3px 8px rgba(0,0,0,.4), 5px 10px 10px rgba(0,0,0,.2), -5px 10px 10px rgba(0,0,0,.4);
+}
+.wrapper .playground1 .choice{
+    margin: 100px 0 0 15px;
+    list-style-type: none;
+}
+.wrapper .playground1 .choice li{
+    display: inline-block;
+    font-size: 30px;
+    margin-left: 30px;
+    width: 60px;
+    height: 50px;
+    text-align: center;
+}
+.wrapper .playground1 .choice .lic:hover{
+    background-color: #D5FF00;
+    font-weight: bold;
+    border-radius:45%;
+    cursor: pointer;
+}
+
+/*Board playground*/
+.wrapper .playground2{
+    display: table;
+    margin: 0 auto;
+    border:none;
+    width: 402px;
+    height: 402px;
+    background-color:#D5FF00;
+
+    box-shadow: inset -1px 1px 7px rgba(0,0,0,.2), inset 1px -1px 7px rgba(0,0,0,.2), 1px 12px 5px rgba(0,0,0,.4), 4px 3px 8px rgba(0,0,0,.4), 5px 10px 10px rgba(0,0,0,.2), -5px 10px 10px rgba(0,0,0,.4);
+}
+.wrapper .playground2 .field{
+    display: inline-block;
+    margin-top: -3px;
+    border:1px solid;
+    width: 33.15%;
+    height: 34%;
+    background-color:#D5FF00;
+    cursor: pointer;
+    font-size:50px;
+    text-align: center;
+    padding-top:7%;
+    vertical-align:top;
+    user-select: none;
+}
+.wrapper .playground2 .field:hover{
+    background-color:#A2FF00;
+}
+
+.wrapper .playground2 .field:nth-child(3n){
+    border-right: none;
+    border-left: none;
+}
+.wrapper .playground2 .field:nth-last-child(3n){
+    border-right: none;
+    border-left: none;    
+}
+.wrapper .playground2 .field:nth-child(-n+3){
+    border-top: none;
+}
+.wrapper .playground2 .field:nth-last-child(-n+3){
+    border-bottom: none;
+}
+
+
+.endGame1{
+    background-color: #09FF00 !important;
+}
+
+.endGame2{
+    background-color: #F70008 !important;
+}
+
+.endGame3{
+    background-color: #00DEFF !important;
+}

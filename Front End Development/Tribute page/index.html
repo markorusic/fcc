@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Tesla's tribute page</title>
+    <link rel="shortcut icon" href="https://cdn.brainpop.com/technology/scienceandindustry/nikolatesla/icon.png"/>
+    <link href='https://fonts.googleapis.com/css?family=Alfa+Slab+One' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+    <script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">  
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="headerController.js"></script>
+  <script type="text/javascript" src="buttonController.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+    <h1 class="text-center someColor alfaFont">Nikola Tesla</h1>
+    <h4 class="text-center lobsterFont someColor">The man who invented the 20th century</h3>
+    </header>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-8 image"></div>
+            <div class="col-md-4 textPos">
+                <h2 class="header lobsterFont" id="bioH" onselectstart="return false">Biography</h2>
+                <div class="btn-group" id = "bioDiv">
+                    <button type="button" class="col-md-4 btn" id="childhood">Early years</button>
+                    <button type="button" class="col-md-3 btn" id="work">Work</button>
+                    <button type="button" class="col-md-2 btn" id="fall">Fall</button>
+                    <button type="button" class="col-md-3 btn" id="death">Death</button>
+                </div>
+                <h2 class="header lobsterFont" id="invH" onselectstart="return false">Inventions</h2>
+                <div class="btn-group" id = "invDiv">
+                    <button type="button" class="col-md-2 btn" id="altCurrent">AC</button>
+                    <button type="button" class="col-md-2 btn" id="xRay">X-Ray</button>
+                    <button type="button" class="col-md-2 btn" id="light">Light</button>
+                    <button type="button" class="col-md-2 btn" id="laser">Laser</button>
+                    <button type="button" class="col-md-2 btn" id="radio">Radio</button>
+                    <button type="button" class="col-md-2 btn" id="robotics">Robot</button>
+                </div>
+                <h2 class="header lobsterFont" id="linkH" onselectstart="return false">More Info</h2>
+                <div class="btn-group" id = "linkDiv">
+                    <button type="button" class="col-md-4 btn" id="wiki" onclick="nextPage(&#39https://en.wikipedia.org/wiki/Nikola_Tesla&#39)">Wikipedia</button>
+                    <button type="button" class="col-md-4 btn" id="actp" onclick="nextPage(&#39http://www.activistpost.com/2012/01/10-inventions-of-nikola-tesla-that.html&#39)">Activistpost</button>
+                    <button type="button" class="col-md-4 btn" id="museum" onclick="nextPage(&#39http://www.nikolateslamuseum.org/web/index.php?l=en&#39)">Museum</button>
+                </div>
+                <script>
+                function nextPage(link){
+                    window.open(link);
+                }
+                </script>
+                
+                <div id="textDiv"></div>
+            </div>
+        </div>         
+    </div>
+</body>
+</html>
